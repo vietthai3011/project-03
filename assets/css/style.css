@@ -219,7 +219,6 @@ a {
 }
 
 .hero__img {
-    margin-left: -6px;
     width: 330px;
     height: 540px;
     border-radius: 6px;
@@ -227,57 +226,9 @@ a {
     z-index: 2;
 }
 
-.hero__img:first-child {
-    animation-name: transform1;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-}
-
 .hero__img:last-child {
     z-index: 1;
-    animation-name: transform2;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-}
-
-@keyframes transform1 {
-    0% {
-        translate: 0;
-        scale: 1;
-        z-index: 2;
-    }
-
-    50% {
-        translate: 300px;
-        scale: calc(410 / 540);
-        z-index: 1;
-    }
-
-    100% {
-        translate: 0;
-        scale: 1;
-        z-index: 1;
-    }
-}
-
-@keyframes transform2 {
-    0% {
-        translate: 0;
-        scale: calc(410 / 540);
-        z-index: 1;
-    }
-
-    50% {
-        translate: -300px;
-        scale: 1;
-        z-index: 2;
-    }
-
-    100% {
-        translate: 0;
-        scale: calc(410 / 540);
-        z-index: 1;
-    }
+    margin-left: -6px;
+    width: 210px;
+    height: 410px;
 }
