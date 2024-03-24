@@ -49,6 +49,22 @@ a {
     opacity: 0.9;
 }
 
+.section__heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.section__desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
 /* ------------------------------------ Header ---------------------------------------------*/
 
 .header-top {
@@ -231,4 +247,95 @@ a {
     margin-left: -6px;
     width: 210px;
     height: 410px;
+}
+
+/* -------------------------------------Services--------------------------------------- */
+
+.services {
+    padding: 170px 0;
+}
+
+.services__heading,
+.services__desc {
+    text-align: center;
+}
+
+.services__desc {
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.services__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+}
+
+.services-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 22px;
+    width: 470px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.services-item__icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eff6fd;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+    color: rgba(16, 55, 92, 1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: color 0.25s;
+    transition: background 0.25s;
+}
+
+.services-item__body {
+    margin-left: 20px;
+}
+
+.services-item__heading {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.services-item__desc {
+    margin-top: 8px;
+    width: 308px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.services-item:hover {
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.services-item:hover .services-item__icon-wrap {
+    background-color: rgba(46, 128, 206, 1);
+}
+
+.services-item:hover path {
+    color: #fff;
+}
+
+.section__btn {
+    margin-top: 55px;
 }
