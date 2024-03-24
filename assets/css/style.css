@@ -401,3 +401,46 @@ a {
     font-weight: 400;
     /* text-shadow: 1px 0 0 #2e80ce; */
 }
+
+/* ----------------------------------------Feature----------------------------------- */
+.feature {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+
+.feature__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__media {
+    width: 48%;
+}
+
+.feature__image {
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature__img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 332px;
+    height: 370px;
+}
+
+.feature__content {
+    width: 40%;
+}
+
+.feature__cta {
+    margin-top: 38px;
+}
