@@ -527,3 +527,49 @@ a {
     border-color: rgba(46, 128, 206, 1);
     color: #fff;
 }
+
+/* ----------------------------------------Install------------------------------------------------------ */
+.install {
+    margin-top: 70px;
+    padding-top: 95px;
+}
+
+.install__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 4px;
+    background: #2e80ce;
+}
+
+.install__img {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    object-fit: cover;
+}
+
+.install__content {
+    margin: 76px;
+    width: 50.1%;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    width: 83.5%;
+}
+
+.install__btn {
+    margin-left: -6px;
+    margin-top: 38px;
+    background-color: transparent;
+    border: none;
+}
+
+.install__btn:first-child {
+    margin-right: 7px;
+}
