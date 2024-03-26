@@ -10,9 +10,11 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
+    scroll-behavior: smooth;
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
 }
@@ -68,9 +70,18 @@ a {
 /* ------------------------------------ Header ---------------------------------------------*/
 
 .header-top {
+    position: sticky;
+    z-index: 111;
+    top: -30px;
+    padding-top: 30px;
+    background-color: var(--header-bg);
+}
+
+.header-top__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 0;
 }
 
 .header {
@@ -677,4 +688,39 @@ a {
 
 .news-item__more:hover {
     color: #2e80ce;
+}
+
+/* --------------------------------------------Appointment---------------------------------------------- */
+.appointment {
+    margin: 85px 0 170px;
+}
+
+.appointment__inner {
+    text-align: center;
+    padding: 100px 70px;
+    background: #f6fbff;
+}
+
+.appointment__heading {
+    position: relative;
+}
+
+.appointment__heading::after {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+
+.appointment__desc {
+    max-width: 617px;
+    margin: 36px auto 39px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
 }
