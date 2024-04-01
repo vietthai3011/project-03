@@ -176,7 +176,7 @@ a {
 }
 
 .navbar__link:hover::after {
-    width: 60px;
+    width: 66%;
 }
 
 .navbar__link:hover {
